@@ -13,4 +13,5 @@ Về mục đích của trang blog, trước tiên là với mục đích học 
 > Becuz we will do some magic.
   
  Ngoài ra, đây còn là nơi để mình viết những bài viết ngẫu hứng về bất cứ thứ gì xảy ra trong cuộc sống của mình. Mặc dù, mình rất rất là làm biếng nhưng mình sẽ cố gắng mỗi ngày đều viết gì đó. Đây cũng là một cách để mình nâng cao khả năng viết của bản thân và tìm ra được cái tôi của mình.
+ 
  Anyway, mình sẽ cố gắng hết sức trong công cuộc trở thành một good boy <3333
