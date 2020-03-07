@@ -1,21 +1,9 @@
 ---
 layout: page
-title: About Emerald
+title: About Me <3
 ---
-## About
-Emerald is a minimal theme created for Jekyll. The main purpose of Emerald is to provide a clear theme for those who want a blog ready to use, focused on the content and mobile-first.
+## Hiiiii
+Chào các bạn đây là kênh blog đầu tiên của mình... À mà quên mình cũng xin giới thiệu một chút về bản thân :>
+Mình tên là Lê Thành Dinh, đang là sinh viên tại trường **Đại học Bách Khoa HCM**, chuyên ngành của mình là Khoa học Máy tính :333
 
-For further details on Emerald, please visit the [repository on Github](https://github.com/KingFelix/emerald/).
-
-![Emerald](img/Emerald01.png "Emerald")
-
-### Setup
-Emerald may be installed by simply downloading the .zip folder from the [repository on Github](https://github.com/KingFelix/emerald/archive/master.zip).
-
-After extracting the content from the folder into the selected directory, you can type ``jekyll serve`` from the terminal, than open your browser to ``0.0.0.0:4000/emerald/`` and you will find it there.
-
-Additionally it is possible to fork the repository and use Github Pages as hosting. By following this way it will be enough to change the ``baseurl`` value into the ``_config.yml`` file, with the directory name of your project (for example /blog) or simply with a "/" (slash) if you want install Emerald in the root. 
-
-Last but not least: the [Jekyll documentation](http://jekyllrb.com) is the best starting point!
-
-Enjoy!
+Về mục đích của trang blog, trước tiên là với mục đích học tập, đây sẽ là nơi mình sum up một ngày học tập của bản thân trong việc tư học **ethical hacking**, một hướng đi mà mình đã quyết định đầu tư cho nó, thông qua việc sinh hoạt trong CLB ATTT [Efiens](https://www.facebook.com/efiens.team) 
