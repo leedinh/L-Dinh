@@ -13,7 +13,7 @@ Mình học cũng được kha khá thứ tuy là basic với người ta nhưng
 
 ## Stack
 
-Stack là một vùng nhớ được tạo ra để chứa các biến, mỗi lần function call nó sẽ tạo ra một vùng nhớ được gọi là stack frame trên stack.
+Stack là một vùng nhớ được tạo ra để chứa các function, biến của chương trình, mỗi lần function call nó sẽ tạo ra một vùng nhớ được gọi là stack frame trên stack.
 Stack phân bộ từ địa chỉ từ lớn tới nhỏ, stack gồm những registers chứa địa chỉ: register ESP(Stack Pointer) chứa address của giá trị trên cùng của stack (stack top). Stack là một cấu trúc FILO ta có thể truy xuất các giá trị nhờ ESP.
 
 Ngoài ra trong stack còn có register EIP(Intruction Pointer), register chỉ dẫn chứa các intructions hướng dẫn chương trình exc. Mỗi khi function call, được đẩy vào stack là register EBP(Base Pointer), nó là save point của 1 stack frame và cố định trước khi function được return. Các registers khác như eax, ebx được dùng để chứa các giá trị thực hiện tính toán trong khi function call.
