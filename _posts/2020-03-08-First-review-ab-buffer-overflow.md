@@ -1,7 +1,7 @@
 ---
 title: Buffer Overflow
 ---
-  Hii, đây là post đầu tiên để write up những gì mình hiểu về buffer overflow exploitation, một common chal khi mình bắt đầu chơi pwn, và mình cũng đang nghiên cứu sâu hơn về nó. mình đang học theo series [binary exploitation](https://www.youtube.com/watch?v=iyAyN3GFM7A&list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN) của LiveOverflow được anh Minh recommend, là 1 series cơ bản cho pwn dummies, mình thấy kênh này hướng dẫn khá là dễ hiểu, btw mình cũng chỉ mới bắt đầu chơi pwn có thấy tháng nên mình gà zlll =))))
+    Hii, đây là post đầu tiên để write up những gì mình hiểu về buffer overflow exploitation, một common chal khi mình bắt đầu chơi pwn, và mình cũng đang nghiên cứu sâu hơn về nó. mình đang học theo series [binary exploitation](https://www.youtube.com/watch?v=iyAyN3GFM7A&list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN) của LiveOverflow được anh Minh recommend, là 1 series cơ bản cho pwn dummies, mình thấy kênh này hướng dẫn khá là dễ hiểu, btw mình cũng chỉ mới bắt đầu chơi pwn có thấy tháng nên mình gà zlll =))))
   
 # Một số thứ mới mà mình học được
   ## Stuffs
