@@ -1,5 +1,5 @@
 ---
-title:First write up 
+title: First write up 
 ---
 
 
