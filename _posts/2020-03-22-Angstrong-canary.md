@@ -54,3 +54,10 @@ Vậy là mình đã tính vị trí của canary + 8byte ebp > return address.
 ![check](img/flag.png)
 TADA!!! chúng ta nhận được flag >...<
 
+# Kết
+Đây là một chal khá là basic nhưng với mình, nó là lần đầu mình được biết tới format string và stack canary nên mình đã quyết writeup.
+
+### Quote of the day
+> "If you cannot do great things, do small things in a great way." -Napoleon Hill
+
+## Tạm biệt mọi người (UwU)
