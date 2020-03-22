@@ -37,6 +37,7 @@ Nhiệm vụ của chúng ta bây giờ có 2 phần:
 ### Stack Canary Leakingg
 Nếu để ý, các bạn sẽ thấy hàm printf sẽ trả về những gì mà ta nhập trên hàm gets --> format string exploit.
 Nếu ta nhập vào các format string thì nó sẽ trả về những giá trị nằm trên stack hiện tại bao gồm cả **stack canary**
+
 BẮT ĐẦU SPAM THÔI!!
 ![check](img/spam.png)
 ![check](img/cc.png)
