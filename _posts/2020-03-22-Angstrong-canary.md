@@ -27,7 +27,8 @@ Hãy xem thử asm của func greet, hàm stack_chk_fail xuất hiện ở cuố
 Đầu tiên mình sẽ xem thử nếu chương trình exec bình thường thì sẽ như thế nào.
 Breakpoint!!! 
 ![check](img/break.png)
-![check](img/exaa/jpg)
+
+![check](img/exaa.jpg)
 
 Nhiệm vụ của chúng ta bây giờ có 2 phần:
 1. Leak được stack canary để pass được stack_chk_fail.
