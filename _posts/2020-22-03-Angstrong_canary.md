@@ -1,14 +1,24 @@
 ---
 title: ANGSTRONG CANARY WRITEUP
 ---
-To insert highlight code inside of a post, it's enough to use some specific tags, has directly described into the [Jekyll documentation](http://jekyllrb.com/docs/templates/#code-snippet-highlighting). In this way the code will be included into a ``.highlight`` CSS class and will be highlight according to the [syntax.scss](https://github.com/mojombo/tpw/blob/master/css/syntax.css) file. This is the standard style adopted by **Github** to highlight the code. :flushed:
+Xin chào mọi người, post này mình sẽ writeup là 1 bài trong Angstrong CTF vừa qua và mình sẽ giới thiệu các bạn về ***stack canary***, kĩ thuật ***format string exploit*** trong BOF chal.... :relaxed:  
 
-This is a CSS example:
-{% highlight css linenos %}
+# Stack Canaries
+![stackcana](img/stackca.png)
+Đơn giản là stack canaries là một giá trị được giấu trong stack, để defend trước lỗi BOF.
+![disca](img/disca.png)
+Khi exc tới đây, program sẽ xor $rax với canary, nếu ZF off thì prog sẽ bị ngắt bởi hàm stack_chk_fail :grimacing:
 
-body {
-  background-color: #fff;
-  }
+# Angstrong canary
+## Problem
+![problem](img/problem.png)
+## Source
+![source](img/source.png)
+## Exploitinggg
+### #Checksec
+![check](img/checksec.png)
+Canary is onn!!!! :grinning:
+
 
 h1 {
   color: #ffaa33;
