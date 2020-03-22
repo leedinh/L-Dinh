@@ -20,27 +20,3 @@ Khi exc tới đây, program sẽ xor $rax với canary, nếu ZF off thì prog 
 Canary is onn!!!! :grinning:
 
 
-h1 {
-  color: #ffaa33;
-  font-size: 1.5em;
-  }
-
-{% endhighlight %}
-
-And this is a HTML example, with a linenumber:
-{% highlight html linenos %}
-
-<html>
-  <a href="example.com">Example</a>
-</html>
-
-{% endhighlight %}
-
-Last, a Ruby example:
-{% highlight ruby linenos %}
-
-def hello
-  puts "Hello World!"
-end
-
-{% endhighlight %}
