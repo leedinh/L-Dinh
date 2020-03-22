@@ -43,7 +43,7 @@ BẮT ĐẦU SPAM THÔI!!
 ![check](img/cc.png)
 Khi i=17 thì được 1 string giống format của canary ta chạy thử ở trên >> ta đã leak được stack canary.
 
-Tiếp theo mình sẽ tính offset để đè canary đã leak được lên rax.
+Tiếp theo mình sẽ tính offset ở **hàm gets thứ 2** để đè canary đã leak được lên rax.
 ![check](img/ofs1.png)
 ![check](img/ofs2.png)
 Vậy là mình đã tính vị trí của canary + 8byte ebp > return address.
