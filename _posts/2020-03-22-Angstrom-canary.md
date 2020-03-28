@@ -1,5 +1,5 @@
 ---
-title: Angstrong Canary Writeup
+title: Angstrom Canary Writeup
 ---
 Xin chào mọi người, post này mình sẽ writeup là 1 bài trong Angstrong CTF vừa qua và mình sẽ giới thiệu các bạn về ***stack canary***, kĩ thuật ***format string exploit*** trong BOF chal.... :smiley:
 
