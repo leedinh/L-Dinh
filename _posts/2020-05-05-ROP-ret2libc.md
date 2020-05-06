@@ -28,9 +28,11 @@ Ta có thể dễ dàng tìm được ret offset của prog..
 Ta có thể tính được bằng cách sử dụng hàm puts để in address của chính hàm puts trên GOT =)) sau đó trừ với offset của hàm puts trong libc là ra được libc_base.
 
 ## Leaking libc
-Trước hết mình sẽ tạo ra 1 rop chain để leak puts.got:<br />
+Trước hết mình sẽ tạo ra 1 rop chain để leak puts.got (～￣▽￣)～<br />
+
 Ta cần 1 gadget để ghi addr của puts.got sau đó ret về puts.plt với cách này thì ta có thể in ra arbitrary address. Mình sẽ sử dụng gadget **pop $rdi ; ret**.<br />
-Layout của ropchain sẽ như thế này: padding(72 byte) + pop_rdi_gadget + puts.got + puts.plt + main_address(nên để ret về main để không bị lỗi o((⊙﹏⊙))o.).<br />
+
+Layout của ropchain sẽ như thế này: padding(72 byte) + pop_rdi_gadget + puts.got + puts.plt + main_address( ((⊙﹏⊙))o.).<br />
 
 ### pop $rdi ; ret
 ![pwn1intro](img/rdi.png)
