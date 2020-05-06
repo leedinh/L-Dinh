@@ -59,7 +59,7 @@ Thế là đã xong, giờ chỉ cần send code lên remote là sẽ ra flag (*
 ![pwn1intro](img/last.png)
 Tada (●ˇ∀ˇ●)
 
-Full expl.py [full exploition](https://github.com/leedinh/InfoSec/tree/master/ROP/pwn1_git)
+Mọi người có thể lấy file binary và exploit.py [\^o^/](https://github.com/leedinh/InfoSec/tree/master/ROP/pwn1_git)
 
 Chào tạm biệt mọi người ( •̀ ω •́ )y
 
