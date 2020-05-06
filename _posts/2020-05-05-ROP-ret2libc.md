@@ -1,7 +1,8 @@
 ---
 title: First Rop
 ---
-Xin chào mọi người, post hôm nay mình sẽ viết về chal ROP đầu tiên của mình, chal này mình được anh Minh giao, lấy từ Midnight Sun CTF 2020-**PWN1** ( •̀ ω •́ )✧
+Xin chào mọi người, post hôm nay mình sẽ viết về chal ROP đầu tiên của mình, chal này mình được anh Minh giao, lấy từ Midnight Sun CTF 2020-**PWN1** 
+( •̀ ω •́ )✧
 
 # PWN1
 ![pwn1intro](img/intro.png)
@@ -47,6 +48,7 @@ Cuối cùng ta đã có được libc address, việc còn lại là từ libc_
 
 ### ROP2
 Mình sẽ viết thêm 1 rop chain nữa bể sys call "/bin/sh" hoặc có thể sử dụng one_gadget cho nhanh.
+
 Layout của rop2: payload(72) + pop_rdi_gadget + sh_address + sys + main
 ![pwn1intro](img/rop2.png)
 Thế là đã xong, giờ chỉ cần send code lên remote là sẽ ra flag (*￣3￣)╭
