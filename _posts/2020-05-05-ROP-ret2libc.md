@@ -23,7 +23,7 @@ Ta có thể dễ dàng tìm được ret offset của prog..
 ![pwn1intro](img/offset2.png)
 
 ## Exploit
-Ý tưởng ở đây mình sẽ ret2libc bằng exc system + "/bin/sh", nhưng do alsr được bật nên mỗi lần run thì address của sys + "/bin/sh" sẽ thay đổi. Thế nên ta phải leak được libc-base, vì address của các sym trong libc đều sẽ bằng libc_base(thay đổi)+ offset(cố định).
+Ý tưởng ở đây mình sẽ ret2libc bằng exc system + "/bin/sh", nhưng do aslr được bật nên mỗi lần run thì address của sys + "/bin/sh" sẽ thay đổi. Thế nên ta phải leak được libc-base, vì address của các sym trong libc đều sẽ bằng libc_base(thay đổi)+ offset(cố định).
 
 Ta có thể tính được bằng cách sử dụng hàm puts để in address của chính hàm puts trên GOT =)) sau đó trừ với offset của hàm puts trong libc là ra được libc_base.
 
