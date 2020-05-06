@@ -33,7 +33,7 @@ Trước hết mình sẽ tạo ra 1 rop chain để leak puts.got (～￣▽￣
 Ta cần 1 gadget để ghi addr của puts.got sau đó ret về puts.plt với cách này thì ta có thể in ra arbitrary address. Mình sẽ sử dụng gadget **pop $rdi ; ret**.<br />
 
 Layout của ropchain sẽ như thế này:<br />
-rop1=padding(72 byte) + pop_rdi_gadget + puts.got + puts.plt + main_address( ((⊙﹏⊙))o.).
+rop1 = padding(72 byte) + pop_rdi_gadget + puts.got + puts.plt + main_address( ((⊙﹏⊙))o.).
 
 ### pop $rdi ; ret
 ![pwn1intro](img/rdi.png)
@@ -53,7 +53,7 @@ Cuối cùng ta đã có được libc address, việc còn lại là từ libc_
 Mình sẽ viết thêm 1 rop chain nữa bể sys call "/bin/sh" hoặc có thể sử dụng one_gadget cho nhanh.
 
 Layout của rop2:<br />
-rop2=payload(72) + pop_rdi_gadget + sh_address + sys + main
+rop2 = payload(72) + pop_rdi_gadget + sh_address + sys + main
 ![pwn1intro](img/rop2.png)
 Thế là đã xong, giờ chỉ cần send code lên remote là sẽ ra flag (*￣3￣)╭
 ![pwn1intro](img/last.png)
