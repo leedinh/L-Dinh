@@ -33,7 +33,7 @@ Trước hết mình sẽ tạo ra 1 rop chain để leak puts.got (～￣▽￣
 Ta cần 1 gadget để ghi addr của puts.got sau đó ret về puts.plt với cách này thì ta có thể in ra arbitrary address. Mình sẽ sử dụng gadget **pop $rdi ; ret**.<br />
 
 Layout của ropchain sẽ như thế này:<br />
-rop1 = padding(72 byte) + pop_rdi_gadget + puts.got + puts.plt + main_address( ((⊙﹏⊙))o.).
+rop1 = padding(72 byte) + pop_rdi_gadget + puts.got + puts.plt + main_address((⊙﹏⊙))o.
 
 ### pop $rdi ; ret
 ![pwn1intro](img/rdi.png)
