@@ -39,7 +39,8 @@ Vì var548 là biến count mỗi lần lặp đều bị ghi thành 0 nên ta c
 ![pwn1intro](img/co2.png)
 Chúng ta sẽ viết payload trong một hàm và sẽ loop bằng vòng for.  
 
-Vậy là xongg!!! Tới đây bài sẽ trở về 1 bài ret2libc bình thường, các bạn có thể gọi sys + bin/sh để exec được shell như các bài trước.
+Vậy là xongg!!! Tới đây bài sẽ trở về 1 bài ret2libc bình thường, các bạn có thể gọi sys + bin/sh để exec được shell cơ bản mòa.   
+Layout: get_shell= payload + system + 'a'\*4 + /bin/sh.     
 (o゜▽゜)o☆
 
 
