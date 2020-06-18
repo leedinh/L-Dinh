@@ -60,21 +60,26 @@ Sẽ ra sao nếu chúng ta nhập c<0 0x80-0xff. Ta có thể lợi dụng 1 đ
 ![pwn1intro](img/wi3.png)
 
 Trước hết các bạn hãy đặt bp tại 0x08048900, đây là đoạn asm ta dùng để overflow ret addr.  
-Ta thấy **mov DWORD PTR [edx+ecx\*4],eax** có nghĩa là tại address ($edx+$ecx\*4) sẽ gán bằng $eax. Vì ta thể tùy chỉnh $ecx, do đây là register lưu byte ta nhập vào. Ví dụ nếu mình nhập vào 0x90, hãy quan sát $eax, $ecx, $edx.
+Ta thấy **mov DWORD PTR [edx+ecx\*4],eax** có nghĩa là tại address ($edx+$ecx\*4) sẽ gán bằng $eax.   
+Vì ta thể tùy chỉnh $ecx, do đây là register lưu byte ta nhập vào. Ví dụ nếu mình nhập vào 0x90, hãy quan sát $eax, $ecx, $edx.
 ![pwn1intro](img/wi4.png) 
-$ecx sẽ có dạng 0xffffff90 vì đây là 1 signed char và 0x90 <0. 
-Nhưng đây chỉ là address ở máy mình có thể khác ở máy mọi người nhưng offset là giống nhau.
+$ecx sẽ có dạng 0xffffff90 vì đây là 1 signed char và 0x90 <0.  
+
+Nhưng đây chỉ là address ở máy mình có thể khác ở máy mọi người nhưng offset là giống nhau.  
+
 Ta có thể tùy chỉnh ecx để *$edx+$ecx\*4*= $ebp-0x4. À mà bài này các bạn chỉnh cần chỉnh ret address thành address của hàm flag là có thể lấy được flag.
 
 ### Compute
 Mình sẽ lấy $ebp-0x4 và $edx để tính ngược lại $ecx ta cần nhập.
 ![pwn1intro](img/wi5.png)
-Công thức cũng đơn giản thôi $ecx=($ebp+0x4-$ecd)/4. Và ta có được kết quả là 0xe1
+Công thức cũng đơn giản thôi $ecx=($ebp+0x4-$ecd)/4. Và ta có được kết quả là 0xe1.  
 Mỗi lần lặp thì eax được inc(1), nên ta sẽ tính từ 0x08048a65 tới address của chỗ readfile flag 0x8048B13 là bao nhiêu, đơn giản là trừ ra offset=217. Vậy là xong!!! 
 ![pwn1intro](img/wi6.png)
 
 # Kết
-Vậy là xong 2 bài của anh Minh giao cho mình, vẫn còn 1 bài về null byte nữa mình sẽ tiếp tục writeup bài đó ＞︿＜
+Vậy là xong 2 bài của anh Minh giao cho mình, vẫn còn 1 bài về null byte nữa mình sẽ tiếp tục writeup bài đó ＞︿＜ 
+
+
 À các bạn có thể lấy 2 bài này tại đây nha >[(╹ڡ╹ )](https://github.com/leedinh/InfoSec/tree/master/c0ffexwinner)<
 
 
